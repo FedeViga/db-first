@@ -1,1 +1,16 @@
 // Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+id: SMALLINT, PK
+targa: VARCHAR(7), UNIQUE
+marca: VARCHAR(30), NOT NULL
+modello: VARCHAR(30), NOT NULL
+versione: VARCHAR(30), NULL
+alimentazione: VARCHAR(20), NOT NULL
+cambio: VARCHAR(20), NOT NULL
+potenza-kW: SMALLINT, NOT NULL
+neopatentati: TINYINT, NULL
+anno: YEAR, NOT NULL
+chilometraggio: MEDIUMINT, NOT NULL
+numero_proprietari: TINYINT, NULL
+prezzo: MEDIUMINT, NOT NULL 
+descrizione: TEXT, NULL
